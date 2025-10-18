@@ -1,7 +1,7 @@
 # Example autostart file
 
 # Set wallpaper.
-swaybg -i ~/media/wallpapers/"coastline.jpg" >/dev/null 2>&1 &
+swaybg -i ~/media/wallpapers/"od_sea.jpg" >/dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
@@ -13,7 +13,7 @@ swaybg -i ~/media/wallpapers/"coastline.jpg" >/dev/null 2>&1 &
 kanshi >/dev/null 2>&1 &
 
 # Launch a panel such as yambar or waybar.
-waybar >/dev/null 2>&1 &
+# waybar >/dev/null 2>&1 &
 
 # To delay the launch of a particular client it is suggested that the following
 # syntax is used: ( sleep X ; foo ) &
