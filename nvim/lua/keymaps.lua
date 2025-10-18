@@ -13,8 +13,7 @@ keymap("n", "<leader>o", function()
     vim.cmd.source()
 end)
 
-keymap("n", "<leader>e", function() vim.cmd.Explore(".") end)
-keymap("n", "<leader>E", function() vim.cmd.Vexplore(".") end)
+keymap("n", "<leader>e", "<CMD>Oil<CR>")
 keymap("n", "<leader>f", function() vim.lsp.buf.format() end)
 
 local pick = require("mini.pick")

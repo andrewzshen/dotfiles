@@ -44,10 +44,8 @@ o.inccommand = "nosplit"
 o.ignorecase = true
 o.smartcase = true
 
--- Netrw for file explorer
+-- Netrw
 vim.g.netrw_liststyle = 1
-vim.g.netrw_sort_by = "size"
-vim.g.netrw_winsize = 30
-
+ 
 -- Misc
 vim.g.have_nerd_font = true

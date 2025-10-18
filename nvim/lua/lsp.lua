@@ -44,7 +44,6 @@ vim.lsp.enable({
     "clangd",
     "jdtls",
     "bashls",
-    "marksman",
 })
 
 vim.diagnostic.config({

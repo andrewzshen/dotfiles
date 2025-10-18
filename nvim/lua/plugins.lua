@@ -7,9 +7,10 @@ vim.pack.add({
     { src = "https://github.com/mason-org/mason-lspconfig.nvim",  name = "mason-lspconfig" },
     { src = "https://github.com/neovim/nvim-lspconfig",           name = "lspconfig" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", name = "treesitter" },
+    { src = "https://github.com/stevearc/oil.nvim",               name = "oil" },
     { src = "https://github.com/nvim-mini/mini.nvim",             name = "mini" },
     { src = "https://github.com/lewis6991/gitsigns.nvim",         name = "gitsigns" },
-    { src = "https://github.com/prichrd/netrw.nvim",              name = "netrw" },
+    { src = "https://github.com/OXY2DEV/markview.nvim",           name = "markview" }
 })
 
 require("onedarkpro").setup({
@@ -38,10 +39,20 @@ require("nvim-treesitter.configs").setup({
     highlight = { enable = true },
 })
 
+require("mini.icons").setup()
+
+require("oil").setup({
+    default_file_explorer = true,
+    columns = {
+        "permissions",
+        "size",
+        "icons",
+    },
+})
+
 require("mini.pick")
 require("mini.statusline").setup()
 require("mini.pairs").setup()
-require("mini.icons").setup()
 
 require("gitsigns").setup({
     signs = {
@@ -53,4 +64,11 @@ require("gitsigns").setup({
     },
 })
 
-require("netrw").setup()
+require("markview").setup({
+    preview = {
+        icon_provider = "mini",
+    },
+    latex = {
+        enable = true,
+    },
+})
