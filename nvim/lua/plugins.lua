@@ -10,7 +10,8 @@ vim.pack.add({
     { src = "https://github.com/stevearc/oil.nvim",               name = "oil" },
     { src = "https://github.com/nvim-mini/mini.nvim",             name = "mini" },
     { src = "https://github.com/lewis6991/gitsigns.nvim",         name = "gitsigns" },
-    { src = "https://github.com/OXY2DEV/markview.nvim",           name = "markview" }
+    { src = "https://github.com/OXY2DEV/markview.nvim",           name = "markview" },
+    { src = "https://github.com/3rd/image.nvim",                  name = "image" },
 })
 
 require("onedarkpro").setup({
@@ -46,11 +47,12 @@ require("oil").setup({
     columns = {
         "permissions",
         "size",
-        "icons",
-    },
+        "mtime",
+        "icon",
+    }
 })
 
-require("mini.pick")
+require("mini.pick").setup()
 require("mini.statusline").setup()
 require("mini.pairs").setup()
 
@@ -72,3 +74,5 @@ require("markview").setup({
         enable = true,
     },
 })
+
+require("image").setup()

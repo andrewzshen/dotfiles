@@ -46,6 +46,6 @@ o.smartcase = true
 
 -- Netrw
 vim.g.netrw_liststyle = 1
- 
+
 -- Misc
 vim.g.have_nerd_font = true

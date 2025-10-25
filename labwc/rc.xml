@@ -8,7 +8,7 @@
 <labwc_config>
 
   <theme>
-    <name>Adwaita Revisited Dark</name>
+    <name>siduck-onedark</name>
     <cornerRadius>8</cornerRadius>
     <font name="sans" size="10" />
   </theme>

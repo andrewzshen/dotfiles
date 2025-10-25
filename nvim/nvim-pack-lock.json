@@ -1,0 +1,44 @@
+{
+  "plugins": {
+    "gitsigns": {
+      "rev": "20ad441",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "image": {
+      "rev": "446a8a5",
+      "src": "https://github.com/3rd/image.nvim"
+    },
+    "lspconfig": {
+      "rev": "ac98db2",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "markview": {
+      "rev": "c93ea99",
+      "src": "https://github.com/OXY2DEV/markview.nvim"
+    },
+    "mason": {
+      "rev": "ad7146a",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mason-lspconfig": {
+      "rev": "2304ff6",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
+    "mini": {
+      "rev": "e04b5c6",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "oil": {
+      "rev": "7e1cd77",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "onedarkpro": {
+      "rev": "eeac884",
+      "src": "https://github.com/olimorris/onedarkpro.nvim"
+    },
+    "treesitter": {
+      "rev": "42fc28ba",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    }
+  }
+}
