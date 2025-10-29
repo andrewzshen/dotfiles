@@ -2,7 +2,7 @@
 -- Where plugins are defined and configured
 
 vim.pack.add({
-    { src = "https://github.com/olimorris/onedarkpro.nvim",       name = "onedarkpro" },
+    { src = "https://github.com/navarasu/onedark.nvim",       name = "onedark" },
     { src = "https://github.com/mason-org/mason.nvim",            name = "mason" },
     { src = "https://github.com/mason-org/mason-lspconfig.nvim",  name = "mason-lspconfig" },
     { src = "https://github.com/neovim/nvim-lspconfig",           name = "lspconfig" },
@@ -14,12 +14,10 @@ vim.pack.add({
     { src = "https://github.com/3rd/image.nvim",                  name = "image" },
 })
 
-require("onedarkpro").setup({
-    styles = {
-        comments = "italic"
-    },
+require("onedark").setup({
+	style = "dark"
 })
-
+require("onedark").load()
 vim.cmd("colorscheme onedark")
 
 require("mason").setup()

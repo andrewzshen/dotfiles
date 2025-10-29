@@ -1,7 +1,7 @@
 # Example autostart file
 
 # Set wallpaper.
-swaybg -i ~/media/wallpapers/"od_sea.jpg" >/dev/null 2>&1 &
+swaybg -i ~/media/wallpapers/"od_clouds.png" >/dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
