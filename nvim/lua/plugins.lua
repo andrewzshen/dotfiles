@@ -2,7 +2,8 @@
 -- Where plugins are defined and configured
 
 vim.pack.add({
-    { src = "https://github.com/navarasu/onedark.nvim",       name = "onedark" },
+    { src = "https://github.com/navarasu/onedark.nvim",           name = "onedark" },
+    { src = "https://github.com/olimorris/onedarkpro.nvim",       name = "onedarkpro" },
     { src = "https://github.com/mason-org/mason.nvim",            name = "mason" },
     { src = "https://github.com/mason-org/mason-lspconfig.nvim",  name = "mason-lspconfig" },
     { src = "https://github.com/neovim/nvim-lspconfig",           name = "lspconfig" },
@@ -15,9 +16,12 @@ vim.pack.add({
 })
 
 require("onedark").setup({
-	style = "dark"
+    style = "dark"
 })
 require("onedark").load()
+
+require("onedarkpro").setup({})
+
 vim.cmd("colorscheme onedark")
 
 require("mason").setup()
@@ -42,6 +46,9 @@ require("mini.icons").setup()
 
 require("oil").setup({
     default_file_explorer = true,
+    view_options = {
+        show_hidden = true,
+    },
     columns = {
         "permissions",
         "size",

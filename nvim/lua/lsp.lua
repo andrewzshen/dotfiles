@@ -44,6 +44,9 @@ vim.lsp.enable({
     "clangd",
     "jdtls",
     "bashls",
+    "html",
+    "jsonls",
+    "ocamllsp"
 })
 
 vim.diagnostic.config({
