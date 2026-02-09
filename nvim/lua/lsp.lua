@@ -46,7 +46,8 @@ vim.lsp.enable({
     "bashls",
     "html",
     "jsonls",
-    "ocamllsp"
+    "ocamllsp",
+    "basedpyright",
 })
 
 vim.diagnostic.config({
