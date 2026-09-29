@@ -46,7 +46,6 @@ vim.lsp.config("basedpyright", {
                 diagnosticMode = "workspace",
                 typeCheckingMode = "off",
             },
-            venvPath = vim.env.VIRTUAL_ENV and vim.env.VIRTUAL_ENV or vim.env.PYENV_ROOT,
         }
     }
 })
@@ -60,6 +59,7 @@ vim.lsp.enable({
     "jsonls",
     "ocamllsp",
     "basedpyright",
+    "hls"
 })
 
 vim.diagnostic.config({

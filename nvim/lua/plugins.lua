@@ -13,6 +13,7 @@ vim.pack.add({
     { src = "https://github.com/lewis6991/gitsigns.nvim",         name = "gitsigns" },
     { src = "https://github.com/OXY2DEV/markview.nvim",           name = "markview" },
     { src = "https://github.com/3rd/image.nvim",                  name = "image" },
+    { src = "https://github.com/Julian/lean.nvim",                name = "lean"},
 })
 
 require("onedark").setup({
@@ -81,3 +82,5 @@ require("markview").setup({
 })
 
 require("image").setup()
+
+vim.g.lean_config = { mappings = true }

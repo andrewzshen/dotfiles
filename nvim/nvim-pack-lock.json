@@ -8,6 +8,10 @@
       "rev": "446a8a5",
       "src": "https://github.com/3rd/image.nvim"
     },
+    "lean": {
+      "rev": "c15b1cea82ccb6c0bc1ee16ec12632fc04219087",
+      "src": "https://github.com/Julian/lean.nvim"
+    },
     "lspconfig": {
       "rev": "ac98db2",
       "src": "https://github.com/neovim/nvim-lspconfig"
