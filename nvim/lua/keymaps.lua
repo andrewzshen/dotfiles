@@ -2,7 +2,7 @@
 -- Keymap definitions
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = "\\"
 
 local keymap = vim.keymap.set
 
