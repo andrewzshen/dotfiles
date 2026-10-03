@@ -84,3 +84,4 @@ require("markview").setup({
 require("image").setup()
 
 vim.g.lean_config = { mappings = true }
+vim.api.nvim_set_hl(0, '@lsp.type.comment', {})
