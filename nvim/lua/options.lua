@@ -49,3 +49,9 @@ vim.g.netrw_liststyle = 1
 
 -- Misc
 vim.g.have_nerd_font = true
+
+if vim.g.vscode then
+    vim.g.clipboard = vim.g.vscode_clipboard
+    o.clipboard = "unnamedplus"
+end
+
